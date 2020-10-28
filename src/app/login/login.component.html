@@ -19,6 +19,6 @@
     </mat-form-field>
   </mat-card-content>
   <mat-card-actions class="text-center">
-    <button mat-raised-button color="primary" [disabled]="formLogin.invalid" (click)="login()">Ingresar</button>
+    <button mat-raised-button color="primary" [disabled]="formLogin.invalid || isLoading" (click)="login()">Ingresar</button>
   </mat-card-actions>
 </mat-card>

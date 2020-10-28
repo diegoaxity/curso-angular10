@@ -1,0 +1,27 @@
+<mat-card class="card-color">
+  <mat-card-header>
+    <mat-card-title>Crear elemento</mat-card-title>
+  </mat-card-header>
+  <mat-card-content [formGroup]="formColor">
+    <mat-form-field class="input-color">
+      <mat-label>Nombre</mat-label>
+      <input matInput placeholder="Ej. Admin" formControlName="name">
+    </mat-form-field>
+    <mat-form-field class="input-color">
+      <mat-label>Hexadecimal</mat-label>
+      <input matInput formControlName="hex">
+    </mat-form-field>
+    <mat-form-field class="input-color">
+      <mat-label>Pantone</mat-label>
+      <input matInput formControlName="pantone">
+    </mat-form-field>
+    <mat-form-field class="input-color">
+      <mat-label>Numero</mat-label>
+      <input type="number" matInput formControlName="num">
+    </mat-form-field>
+    <mat-checkbox formControlName="active" class="input-color">Activo</mat-checkbox>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="primary" (click)="save()" [disabled]="formColor.invalid">Guardar</button>
+  </mat-card-actions>
+</mat-card>

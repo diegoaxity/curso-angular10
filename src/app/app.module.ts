@@ -12,12 +12,20 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { ColorsComponent } from './colors/colors.component';
+import { ColorDetailComponent } from './color-detail/color-detail.component';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    ColorsComponent,
+    ColorDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +36,11 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatButtonModule,
     MatInputModule,
     MatCardModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule,
+    MatSnackBarModule,
+    MatProgressBarModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
