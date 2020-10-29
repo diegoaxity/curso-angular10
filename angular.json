@@ -57,6 +57,34 @@
                   "maximumError": "10kb"
                 }
               ]
+            },
+            "qa": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.qa.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
             }
           }
         },
@@ -68,6 +96,9 @@
           "configurations": {
             "production": {
               "browserTarget": "angular10-course:build:production"
+            },
+            "qa": {
+              "browserTarget": "angular10-course:build:qa"
             }
           }
         },
@@ -117,6 +148,9 @@
           "configurations": {
             "production": {
               "devServerTarget": "angular10-course:serve:production"
+            },
+            "qa": {
+              "devServerTarget": "angular10-course:serve:qa"
             }
           }
         }

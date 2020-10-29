@@ -38,4 +38,22 @@ export class DataService {
   getLoading(): Observable<boolean> {
     return this.loading.asObservable();
   }
+
+  suma(a: number, b: number): number {
+    return a + b;
+  }
+
+  getUserColor(profileId: number): string {
+    if (profileId === 1) {
+      return 'rojo';
+    }
+    if (profileId === 2) {
+      return 'azul';
+    }
+    if (profileId === 3) {
+      return 'verde';
+    }
+
+    return '';
+  }
 }

@@ -18,6 +18,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { ColorsComponent } from './colors/colors.component';
 import { ColorDetailComponent } from './color-detail/color-detail.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     HttpClientModule,
     MatSnackBarModule,
     MatProgressBarModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

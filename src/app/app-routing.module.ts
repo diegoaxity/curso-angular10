@@ -25,6 +25,10 @@ const routes: Routes = [
     component: ColorDetailComponent
   },
   {
+    path: 'color-detail/:id',
+    component: ColorDetailComponent
+  },
+  {
     path: '**',
     redirectTo: '/login'
   }
